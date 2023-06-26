@@ -19,8 +19,10 @@ const LoginScreen = ({ navigation }) => {
     return (
         <View style={styles.container}>
 
+            <Image source={require('../../utils/images/loginV.png')} style={{width:'100%',height:100,marginBottom:20}} resizeMode="contain" />
+
             <AppText style={{fontSize:25,color:'white'}}>Welcome Back</AppText>
-            <AppText style={{fontSize:14,color:'grey',marginTop:10}}>Login and Continue your journey with us !</AppText>
+            <AppText style={{fontSize:14,color:'grey',marginTop:10}}>Login and Continue where you left !</AppText>
 
 
             <View style={{width:'100%',padding:10,marginTop:20,justifyContent:'center',alignItems:'center'}}>

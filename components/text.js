@@ -1,6 +1,6 @@
 import React from "react";
 import { Text } from "react-native";
 
-export default AppText = ({ children, style,props }) => {
-    return <Text {...props} style={[style, { fontFamily: "Open-Sans" }]}>{children}</Text>;
+export default AppText = ({ children, style,bold,props }) => {
+    return <Text {...props} style={[style, { fontFamily: bold ? "Open-Sans-Bold" : "Open-Sans" }]}>{children}</Text>;
 }

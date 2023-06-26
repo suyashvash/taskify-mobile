@@ -19,16 +19,27 @@ const WelcomeScreen = ({ navigation }) => {
     return (
         <View style={styles.container}>
 
-            <AppText style={{fontSize:35,color:'white'}}>Taskify</AppText>
-            <AppText style={{fontSize:14,color:'grey',marginTop:10,marginBottom:30}}>Task with Gamification !</AppText>
+            <View style={{width:'100%',height:'60%',position:'absolute',top:10,justifyContent:'center',alignItems:'center'}}>
+                <Image source={require('../../utils/images/welcome1.png')} style={{width:'100%',height:450}} resizeMode="contain" />
 
-            <TouchableOpacity onPress={toLogin} style={{width:'80%',padding:10,paddingVertical:15,borderRadius:5,marginTop:20,justifyContent:'center',alignItems:'center',backgroundColor:Colors.third}}>
-                <AppText style={{color:'white'}}>Login</AppText>
-            </TouchableOpacity>
+            </View>
 
-            <TouchableOpacity onPress={toRegister} style={{width:'80%',padding:10,paddingVertical:15,borderRadius:5,marginTop:20,justifyContent:'center',alignItems:'center',borderColor:Colors.third,borderWidth:2}}>
-                <AppText style={{color:'white'}}>Register</AppText>
-            </TouchableOpacity>
+            <View style={{width:'100%',justifyContent:'center',alignItems:'center',position:'absolute',bottom:50 }}>
+
+                <AppText bold={true} style={{fontSize:25,color:'white'}}>Welcome to Taskify</AppText>
+                <AppText style={{fontSize:14,color:'grey',marginTop:10,marginBottom:20,width:'65%',textAlign:'center'}}>Join the new world where completing tasks is Fun!</AppText>
+
+                <TouchableOpacity onPress={toLogin} style={{width:'80%',padding:15,borderRadius:50,marginTop:20,justifyContent:'center',alignItems:'center',backgroundColor:Colors.third}}>
+                    <AppText style={{color:'white'}}>Login</AppText>
+                </TouchableOpacity>
+
+                <TouchableOpacity onPress={toRegister} style={{width:'80%',padding:10,borderRadius:5,marginTop:10,justifyContent:'center',alignItems:'center'}}>
+                    <AppText style={{color:'white'}}>Register</AppText>
+                </TouchableOpacity>
+            
+
+            </View>
+
             
         </View>
     )
