@@ -4,6 +4,9 @@ export const Routes ={
         welcomeScreen: "WelcomeScreen",
         loginScreen: "LoginScreen",
         signUpScreen: "SignUpScreen",
+    },
+    mainAppStack: {
+        tag: "mainAppStack",
     }
 
 }
